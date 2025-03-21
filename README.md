@@ -1,6 +1,8 @@
 # KeTangPi-PDF-Download
 
-下载不可下载的课堂派PDF文档
+课堂派pdf下载
+
+下载被设置为不可下载的课堂派PDF文档
 
 ## 第一步，在课堂派上打开对应的pdf文件，通过F12打开网页源代码，利用ctrl+F搜索到含frame的地方（注意需要是下面截图那个“#document”）
 
