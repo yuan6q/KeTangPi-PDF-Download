@@ -4,7 +4,7 @@
 
 ## 第一步，在课堂派上打开对应的pdf文件，通过F12打开网页源代码，利用ctrl+F搜索到含frame的地方（注意需要是下面截图那个“#document”）
 
-<img width="674" alt="image" src="https://github.com/user-attachments/assets/3856d705-1503-45aa-923c-e8abcf98c9b2" />
+![image](https://github.com/user-attachments/assets/60a154e7-7e32-4052-8ef4-c07c199c3a73)
 
 将链接复制到浏览器打开此时便可以得到原html文件
 
