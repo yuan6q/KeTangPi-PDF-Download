@@ -1,4 +1,5 @@
 import os
+import re
 import img2pdf
 
 # 获取用户输入的文件夹路径
@@ -6,10 +7,9 @@ folder_path = input("Folder Path: ").strip()
 
 # 获取所有以 img 开头的文件，并按顺序排序
 img_files = sorted(
-    (f for f in os.listdir(folder_path) if f.startswith('img')),
-    key=lambda x: int(x[3:-1]) if x[3:-1].isdigit() else 0  # 解析数字部分
+    (f for f in os.listdir(folder_path) if f.startswith("img")),
+    key=lambda x: int(re.search(r"\((\d+)\)$", x).group(1)) if re.search(r"\((\d+)\)$", x) else -1
 )
-
 # 检查是否有图片
 if not img_files:
     print("❌ 没有找到以 img 开头的文件，请检查文件夹路径。")
